@@ -47,6 +47,44 @@ public class Main {
 		}
 		// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 		
+		// -=-=-=-=-=-= [Exercise 3] =-=-=-=-=-=-
+		System.out.println("Ex3");
+		// Alcool = 1
+		// Gasolina = 2
+		// Diesel = 3
+		// Fim = 4
+		
+		System.out.println("-=-=-=-=-=-= [POSTO] =-=-=-=-=-=-");
+		System.out.println("∟ 1. Alcool");
+		System.out.println("∟ 2. Gasolina");
+		System.out.println("∟ 3. Diesel");
+		System.out.println("∟ 4. Fim");
+		System.out.println("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-");
+		int option_gas_station = read.nextInt();
+		int count_Alcool = 0;
+		int count_Gas = 0;
+		int count_Diesel = 0;
+		
+		while(option_gas_station != 4) {
+			switch(option_gas_station) {
+				case 1:
+					count_Alcool += 1;
+					break;
+				
+				case 2:
+					count_Gas += 1;
+					break;
+				
+				case 3:
+					count_Diesel += 1;
+					break;
+			}
+			option_gas_station = read.nextInt();
+			
+		}
+		System.out.println("Alcool: "+count_Alcool);
+		System.out.println("Gasolina: "+count_Gas);
+		System.out.println("Diesel: "+count_Diesel);
 		
 		read.close(); // Close, reading input
 	}
